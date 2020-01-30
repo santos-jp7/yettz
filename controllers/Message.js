@@ -1,7 +1,7 @@
 require('dotenv/config');
 
 const Dm = require('./utils/Dm');
-const Comands = require('./utils/Comands');
+const Functions = require('./utils/Functions');
 
 async function Message(m, Client){
     if(Client.user.id == m.author.id) return;
@@ -13,12 +13,12 @@ async function Message(m, Client){
 
     if(content.indexOf(prefix) != 0) return;
 
-    let [comand] = content.toLowerCase().split(' ');
-    comand = comand.replace(prefix, '');
+    let [command] = content.toLowerCase().split(' ');
+    command = command.replace(prefix, '');
     
-    if((comand in Comands) == false) return m.reply(`Comando inválido.`);
+    if((command in Functions) == false) return m.reply(`Comando inválido.`);
 
-    const response = await Comands[comand](m, Client);
+    const response = await Functions[command](m, Client);
     return m.reply(response);
 }
 
