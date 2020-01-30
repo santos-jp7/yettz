@@ -54,7 +54,6 @@ class Functions{
         let [command, ...args] = content.toLowerCase().split(' ');
 
         return await Decide(); 
-
     }
 
     async encurtar(m, Client){
@@ -62,22 +61,20 @@ class Functions{
         let [command, ...args] = content.toLowerCase().split(' ');
 
         return await Encurtar(args);
-
     }
 
     async help(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await 'a'; 
-
+        return await Help(m, Client); 
     }
 
     async invite(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await 'a'; 
+        return await 'a';
 
     }
 
