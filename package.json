@@ -1,0 +1,30 @@
+{
+  "name": "yettz",
+  "version": "3.0.1",
+  "description": "Bot para Discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node teste.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santos-jp7/yettz.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "node",
+    "js"
+  ],
+  "author": "Jean Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santos-jp7/yettz/issues"
+  },
+  "homepage": "https://github.com/santos-jp7/yettz#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "save": "^2.4.0"
+  }
+}
