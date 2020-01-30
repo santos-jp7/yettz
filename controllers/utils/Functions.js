@@ -24,30 +24,36 @@ class Functions{
     async echo(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
-        
+
+        return await Echo(args);
     }
 
     async ping(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await Ping(Client);
     }
 
     async math(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await Math(args);
     }
 
     async clima(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await Clima(args); 
     }
 
     async decide(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -55,11 +61,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async help(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -67,11 +77,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async limpar(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
     
@@ -79,11 +93,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async nsfw(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -91,11 +109,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async rule34(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -103,11 +125,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async yes(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -115,11 +141,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async ban(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -127,11 +157,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async voteban(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 
@@ -139,11 +173,15 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
+        return await 'a'; 
+
     }
 
     async warn(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await 'a'; 
 
     }
 }

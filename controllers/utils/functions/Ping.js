@@ -1,3 +1,3 @@
-module.exports = async function(args){
-    
+module.exports = async function(Client){
+    return `Pong! -> ${Math.round(Client.ping)}ms`
 }
