@@ -5,7 +5,7 @@ const Functions = require('./utils/Functions');
 
 async function Message(m, Client){
     if(Client.user.id == m.author.id) return;
-    if(process.env.DEV == 'yes' && m.author.id != process.env.DEV_ID) return m.reply("Bot em manutenção.");
+    if(process.env.DEV == 'yes' && m.author.id != process.env.DEV_ID);
     if(m.channel.type == 'dm') return Dm(m, Client);
 
     const prefix = process.env.PREFIX;
