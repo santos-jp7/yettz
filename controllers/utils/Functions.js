@@ -90,7 +90,23 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await 'a'; 
+        return await No(m); 
+
+    }
+
+    async yes(m, Client){
+        const {content} = m;
+        let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await Yes(m); 
+
+    }
+
+    async sim(m, Client){
+        const {content} = m;
+        let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await Yes(m); 
 
     }
 
@@ -98,7 +114,7 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await 'a'; 
+        return await Nsfw(m);
 
     }
 
@@ -119,14 +135,6 @@ class Functions{
     }
 
     async slap(m, Client){
-        const {content} = m;
-        let [command, ...args] = content.toLowerCase().split(' ');
-
-        return await 'a'; 
-
-    }
-
-    async yes(m, Client){
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
