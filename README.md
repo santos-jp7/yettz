@@ -74,12 +74,15 @@ Bom... Se quer me ter em seu computador é só seguir esses passos:
 ## Instalação
 
 1. Clone o repositório
+
 ```sh
 git clone https://github.com/santos-jp7/yettz.git
 ```
 
 Ou faça o [download](https://github.com/santos-jp7/yettz/archive/master.zip)
-3. Instale as depedências
+
+2. Instale as depedências
+
 ```sh
 npm install
 ```
@@ -88,7 +91,9 @@ Ou caso esteja utilizando yarn
 ```sh
 yarn
 ```
-4. Crie um arquivo `.env` na raiz do projeto
+
+3. Crie um arquivo `.env` na raiz do projeto
+
 ```JS
 DEV_ID={seu id de usuario}
 
