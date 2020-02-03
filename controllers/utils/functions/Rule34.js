@@ -1,11 +1,7 @@
 const axios = require('axios');
 const Discord = require('discord.js');
 
-module.exports = async function(m){
-    if(m.channel.nsfw == false) return "Esse comando só pode ser executado em canais adultos.";
-
-    const {content} = m;
-    let [command, ...args] = content.toLowerCase().split(' ');
+module.exports = async function(args){
     if(args.length != 0) args = '?tags='+args.join(" ");
     if(args.length == 0) args = '';
 

@@ -79,6 +79,8 @@ class Functions{
     }
 
     async limpar(m, Client){
+        if(!m.member.hasPermission("ADMINISTRATOR")) return 'Você não tem permissão para executar esse comando.';
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
@@ -111,6 +113,8 @@ class Functions{
     }
 
     async nsfw(m, Client){
+        if(m.channel.nsfw == false) return "Esse comando só pode ser executado em canais adultos.";
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
@@ -127,10 +131,12 @@ class Functions{
     }
 
     async rule34(m, Client){
+        if(m.channel.nsfw == false) return "Esse comando só pode ser executado em canais adultos.";
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await Rule34(m); 
+        return await Rule34(args);
 
     }
 
@@ -150,6 +156,8 @@ class Functions{
     }
 
     async ban(m, Client){
+        if(!m.member.hasPermission("BAN_MEMBERS")) return 'Você não tem permissão para banir usuários.';
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
@@ -158,6 +166,8 @@ class Functions{
     }
 
     async kick(m, Client){
+        if(!m.member.hasPermission("KICK_MEMBERS")) return 'Você não tem permissão para banir usuários.';
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
@@ -174,6 +184,8 @@ class Functions{
     }
 
     async send(m, Client){
+        if(!m.member.hasPermission("ADMINISTRATOR")) return 'Você não tem permissão para executar esse comando.';
+        
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
@@ -182,6 +194,8 @@ class Functions{
     }
 
     async warn(m, Client){
+        if(!m.member.hasPermission("ADMINISTRATOR")) return 'Você não tem permissão para executar esse comando.';
+
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 

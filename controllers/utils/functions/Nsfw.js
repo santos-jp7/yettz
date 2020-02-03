@@ -1,9 +1,7 @@
 const axios = require('axios');
 const Discord = require('discord.js');
 
-module.exports = async function(m){
-    if(m.channel.nsfw == false) return "Esse comando só pode ser executado em canais adultos.";
-
+module.exports = async function(){
     const response = await axios.get('https://www.reddit.com/r/nsfw.json');
     const {data} = response.data;
     const {dist} = data;
