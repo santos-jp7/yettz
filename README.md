@@ -56,7 +56,7 @@ Minha memória ainda é curta, mas em breve terei um banco de dados onde poderei
 
 # Versão global
 
-Clique [aqui]() para me adicionar ao seu servidor! 
+Clique [aqui]() para me adicionar ao seu servidor! [OFF]
 
 # Versão local
 
