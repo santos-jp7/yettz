@@ -8,9 +8,6 @@
     <a href="https://github.com/santos-jp7/yettz/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/santos-jp7/yettz" />
     </a>
-    <a href="https://github.com/santos-jp7/yettz/pulse" alt="Activity">
-        <img src="https://img.shields.io/github/commit-activity/m/santos-jp7/yettz" />
-    </a>
     <a href="https://discord.gg/zsAnRKZ">
         <img src="https://img.shields.io/discord/433127412444954634?logo=discord"
             alt="chat on Discord">
