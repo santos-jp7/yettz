@@ -145,7 +145,7 @@ class Functions{
         const {content} = m;
         let [command, ...args] = content.toLowerCase().split(' ');
 
-        return await 'a'; 
+        return await Yt(args); 
 
     }
 
