@@ -1,9 +1,34 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<p align="center">
+    <a href="https://github.com/santos-jp7/yettz/" alt="Version">
+        <img src="https://img.shields.io/github/package-json/v/santos-jp7/yettz/master" />
+    </a>
+    <a href="https://github.com/santos-jp7/yettz/" alt="Version">
+        <img src="https://img.shields.io/github/stars/santos-jp7/yettz" />
+    </a>
+    <a href="https://github.com/santos-jp7/yettz/graphs/contributors" alt="Contributors">
+        <img src="https://img.shields.io/github/contributors/santos-jp7/yettz" />
+    </a>
+    <a href="https://github.com/santos-jp7/yettz/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/santos-jp7/yettz" />
+    </a>
+    <a href="https://discord.gg/zsAnRKZ">
+        <img src="https://img.shields.io/discord/433127412444954634?logo=discord"
+            alt="chat on Discord">
+    </a>
+    <a href="https://twitter.com/intent/follow?screen_name=santos_jp7">
+        <img src="https://img.shields.io/twitter/follow/santos_jp7?style=social&logo=twitter"
+            alt="follow on Twitter">
+    </a>
+    <br />
+     <a href="https://github.com/santos-jp7/yettz/issues">
+        <img src="https://img.shields.io/github/issues/santos-jp7/yettz"
+            alt="Issues">
+    </a>
+    <a href="https://github.com/santos-jp7/yettz/pulls">
+        <img src="https://img.shields.io/github/issues-pr/santos-jp7/yettz"
+            alt="Pull Request">
+    </a>
+</p>
 
 <br />
 <p align="center">
