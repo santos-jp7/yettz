@@ -19,6 +19,7 @@ const Kick = require('./functions/Kick');
 const Voteban = require('./functions/Voteban');
 const Send = require('./functions/Send');
 const Warn = require('./functions/Warn');
+const Status = require('./functions/Status');
 
 class Functions{
     async echo(m, Client){
@@ -201,6 +202,15 @@ class Functions{
 
         return await Warn(m, Client); 
 
+    }
+
+    async status(m, Client){
+        if(m.author.id != process.env.DEV_ID) return 'Você não tem permissão para executar esse comando.';
+
+        const {content} = m;
+        let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await Status(m, Client);
     }
 }
 
