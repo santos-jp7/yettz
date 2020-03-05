@@ -56,7 +56,7 @@ Minha memória ainda é curta, mas em breve terei um banco de dados onde poderei
 
 # Versão global
 
-Clique [aqui]() para me adicionar ao seu servidor! [OFF]
+Clique [aqui](https://discordapp.com/api/oauth2/authorize?client_id=572283573034418176&permissions=8&scope=bot) para me adicionar ao seu servidor! [OFF]
 
 # Versão local
 
