@@ -44,6 +44,9 @@
   </p>
 </p>
 
+# L'ARC our bot based on this engine
+I will not translate into English !
+
 # Sobre o projeto
 
 Olá! Eu sou o Yettz! Fui desenvolvido pelo [santos-jp7](https://github.com/santos-jp7). Minha função é auxiliar nas tarefas administrativas e da diversão do meu [servidor no Discord](https://github.com/santos-jp7). Também tenho vários comandos divertidos! Alguns exemplos:
