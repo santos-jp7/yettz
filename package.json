@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node teste.js"
+    "test": "node index.test.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,13 @@
     "axios": "^0.19.2",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
+    "mongoose": "^5.9.20",
     "save": "^2.4.0",
     "ytdl-getinfo": "^1.1.0"
+  },
+  "devDependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "ffmpeg-static": "^4.2.2",
+    "ytdl-core": "^2.1.5"
   }
 }

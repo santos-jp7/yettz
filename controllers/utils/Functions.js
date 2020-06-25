@@ -20,6 +20,7 @@ const Voteban = require('./functions/Voteban');
 const Send = require('./functions/Send');
 const Warn = require('./functions/Warn');
 const Status = require('./functions/Status');
+const Prefix = require('./functions/Prefix')
 
 class Functions{
     async echo(m, Client){
@@ -211,6 +212,15 @@ class Functions{
         let [command, ...args] = content.toLowerCase().split(' ');
 
         return await Status(m, Client);
+    }
+
+    async prefix(m, Client){
+        if(!m.member.hasPermission("ADMINISTRATOR")) return 'Você não tem permissão para executar esse comando.';
+
+        const {content} = m;
+        let [command, ...args] = content.toLowerCase().split(' ');
+
+        return await Prefix(m, args);
     }
 }
 
