@@ -34,7 +34,8 @@ module.exports = async function(m, Client){
     embed3.addField("ℹ `" + process.env.PREFIX + "send`", "Envia uma mensagem privada para o úsuario especificado.");
     embed3.addField("ℹ `" + process.env.PREFIX + "limpar`", "Limpa mensagens de um canal.");
     embed3.addField("ℹ `" + process.env.PREFIX + "ban`", "Bane um úsuario da guild.");
-    embed3.addField("ℹ `" + process.env.PREFIX + "kick`", "Expulsa um úsuario da guild. ");
+    embed3.addField("ℹ `" + process.env.PREFIX + "kick`", "Expulsa um úsuario da guild.");
+    embed3.addField("ℹ `" + process.env.PREFIX + "prefix`", "Altera o prefixo do bot.");
     // embed3.addField("ℹ `" + process.env.PREFIX + "set_bot`", "Informa qual canal vai ser permitido usar comandos.");
     // embed3.addField("ℹ `" + process.env.PREFIX + "set_welcome`", "Informa qual canal vai ser enviado as boas vindas.");
     // embed3.addField("ℹ `" + process.env.PREFIX + "set_anuncios`", "Informa qual canal vai ser permitido enviar links de convite.");
