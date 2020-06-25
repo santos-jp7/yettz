@@ -4,11 +4,14 @@ module.exports = async function(m){
 
     try{
         args = parseInt(args);
-        if(args > 100) return "Posso apagar no máximo 100 mesagens.";
+        if(args > 99) return "Posso apagar no máximo 99 mensagens.";
 
-        const messages = await m.channel.fetchMessages({limit: args + 1});
-        m.channel.bulkDelete(messages);
-        return "Chat limpo com sucesso.";
+        const messages = await m.channel.fetchMessages({limit: args+1});
+        const deletes = await m.channel.bulkDelete(messages);
+
+        if(!deletes) return "Ops... Ocorreu um erro.";
+
+        return 'Chat limpo com sucesso!';
     }catch(e){
         console.log(e);
         return "Ops... Ocorreu um erro.";
