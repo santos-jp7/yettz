@@ -30,10 +30,5 @@
     "mongoose": "^5.9.20",
     "save": "^2.4.0",
     "ytdl-getinfo": "^1.1.0"
-  },
-  "devDependencies": {
-    "@discordjs/opus": "^0.3.2",
-    "ffmpeg-static": "^4.2.2",
-    "ytdl-core": "^2.1.5"
   }
 }

@@ -1,5 +1,7 @@
 require('dotenv/config');
 
+const Mongoose = require('mongoose');
+
 const Dm = require('./utils/Dm');
 const Functions = require('./utils/Functions');
 
@@ -9,12 +11,12 @@ async function Message(m, Client){
     if(Client.user.id == m.author.id) return;
     if(process.env.DEV == 'yes' && m.author.id != process.env.DEV_ID) return;
     if(m.channel.type == 'dm') return Dm(m, Client);
-    
+
     let prefix;
 
     const guildId = m.guild.id;
     
-    if(process.env.DB_URL != undefined){
+    if(Mongoose.connection.readyState == 1){
         const guild = await Guild.findOne({id: guildId});
 
         if(!guild) prefix = process.env.PREFIX; else prefix = guild.prefix;

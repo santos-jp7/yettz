@@ -2,6 +2,7 @@ const Guild = require('../../../Models/Guild');
 
 module.exports = async function(m, args){
     if(args.length == 0) return 'Esse comando precisa ser comentado.';   
+    if(Mongoose.connection.readyState != 1) return 'Esse comando não está habilitado.';
 
     const newPrefix = args[0];
     const guildId = m.guild.id;
