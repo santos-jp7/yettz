@@ -14,8 +14,10 @@ if(process.env.DB_URL != undefined){
 
 const Ready = require('./controllers/Ready');
 const Message = require('./controllers/Message');
+const GuildMemberAdd = require('./controllers/GuildMemberAdd')
 
 Client.on('ready', () => Ready(Client));
 Client.on('message', (m) => Message(m, Client));
+Client.on('guildMemberAdd', (u) => GuildMemberAdd(u));
 
 Client.login(process.env.TOKEN);
