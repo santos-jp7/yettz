@@ -1,4 +1,5 @@
 const Guild = require('../../../Models/Guild');
+const Mongoose = require('mongoose');
 
 module.exports = async function(m, args){
     if(args.length == 0) return 'Esse comando precisa ser comentado.';   
