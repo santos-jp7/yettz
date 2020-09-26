@@ -2,7 +2,11 @@ const axios = require('axios');
 const Discord = require('discord.js');
 
 module.exports = async function(){
-    const response = await axios.get('https://www.reddit.com/r/nsfw.json');
+    const terms = ['nsfw', 'nudes', 'anal', 'sexy', 'pussy'];
+    const randomt = Math.floor(Math.random() * 4);
+    const term = terms[randomt];
+
+    const response = await axios.get(`https://www.reddit.com/r/${term}.json`);
     const {data} = response.data;
     const {dist} = data;
     const random = Math.floor(Math.random() * dist);
