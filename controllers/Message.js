@@ -2,6 +2,8 @@ require('dotenv/config');
 
 const Mongoose = require('mongoose');
 
+const Voice = require("./Voice");
+
 const Dm = require('./utils/Dm');
 const Functions = require('./utils/Functions');
 
@@ -31,10 +33,14 @@ async function Message(m, Client){
     let [command] = content.toLowerCase().split(' ');
     command = command.replace(prefix, '');
     
-    if((command in Functions) == false) return;
+    if((command in Functions) == false && (command in Voice) == false) return;
 
-    const response = await Functions[command](m, Client);
-    return m.reply(response);
+    if(command in Functions){
+        const response = await Functions[command](m, Client);
+        return m.reply(response);
+    }
+
+    if(command in Voice) Voice[command](m, Client);
 }
 
 module.exports = Message;
