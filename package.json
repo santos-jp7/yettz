@@ -1,6 +1,6 @@
 {
   "name": "yettz",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Bot para Discord.",
   "main": "index.js",
   "scripts": {
