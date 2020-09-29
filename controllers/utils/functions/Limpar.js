@@ -2,6 +2,8 @@ module.exports = async function(m){
     const {content} = m;
     let [command, ...args] = content.toLowerCase().split(' ');
 
+    if(args.length == 0) return "Esse comando precisa ser comentado.";
+
     try{
         args = parseInt(args);
         if(args > 99) return "Posso apagar no máximo 99 mensagens.";
