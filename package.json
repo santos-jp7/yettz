@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/santos-jp7/yettz#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.20",
