@@ -27,7 +27,7 @@
     "axios": "^0.21.2",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
-    "mongoose": "^5.9.20",
+    "mongoose": "^5.13.15",
     "save": "^2.4.0",
     "ytdl-getinfo": "^1.1.0"
   }
